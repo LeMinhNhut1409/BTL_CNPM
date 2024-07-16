@@ -1,0 +1,44 @@
+<nav>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"> KHÁCH SẠN MÂY TRẮNG </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Trang chủ</a>
+                    </li>
+                    {% for c in categories %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/?cate_id={{c.maLP}}">{{ c.tenLP }}</a>
+                    </li>
+                    {% endfor %}
+
+                {% if current_user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="/">
+                        <img src="{{current_user.avatar}}" style="width:25px" class="rounded" /> Chào {{current_user.username}}!
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="/logout">Đăng xuất</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="/login">Đăng nhập</a>
+                </li>
+                {% endif %}
+                 <li class="nav-item">
+                     <a class="nav-link text-danger" href="/cart"> &#xF23F; Đặt phòng<span class="badge bg-danger cart-counter">{{ cart.total_quantity }}</span></a>
+                 </li>
+                </ul>
+                <form class="d-flex" method="get" action="/">
+                    <input class="form-control me-2" type="text" name="kw" placeholder="Nhập từ khóa....">
+                    <button class="btn btn-success" type="submit">Tìm</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</nav>

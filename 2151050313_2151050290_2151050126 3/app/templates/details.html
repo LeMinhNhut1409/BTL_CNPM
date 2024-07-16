@@ -1,0 +1,206 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}Xem chi tiết {% endblock %}
+
+{% block content %}
+<h1 class="text-center text-info mt-1">CHI TIẾT SẢN PHẨM</h1>
+
+<div class="row">
+    <div class="col-md-5 col-xs-12">
+        <img src="{{product.hinhAnh}}" class="img-fluid rounded"/>
+    </div>
+    <div class="col-md-7 col-xs-12">
+        <h2>{{ product.tenPhong }}</h2>
+        <h4><i class="fa-solid fa-dollar-sign"></i> {{ product.giaPhong }} VNĐ</h4>
+        <div class="css-1dbjc4n r-ymttw5">
+            <div class="css-1dbjc4n r-1yzf0co">
+                <!--            <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-b88u0q r-rjixqe r-6gpygo r-fdjqy7">Thông tin phòng</div>-->
+                <div class="css-1dbjc4n r-eqz5dr" style="align-items: stretch; -webkit-box-align: stretch;">
+                    <div class="css-1dbjc4n r-1awozwy r-18u37iz r-1h0z5md">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                             data-id="IcHotelRoomMeasure">
+                            <path d="M12 21H7L21 7V21H18M12 21V20M12 21H15M15 21V20M15 21H18M18 21V20M15 17H17V15"
+                                  stroke="#0194F3" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                            <path d="M8 8L9 9M8 8L5 11M8 8L11 5M5 11L6 12M5 11L2 14L5 17L17 5L14 2L11 5M11 5L12 6"
+                                  stroke="#03121A" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                        </svg>
+                        <div class="css-1dbjc4n r-1pyaxff"></div>
+                        <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-majxgm r-rjixqe r-fdjqy7">{{product.dienTich}} m²
+                        </div>
+                    </div>
+                    <div class="css-1dbjc4n" style="padding-bottom: 8px;"></div>
+<!--                    <div class="css-1dbjc4n r-1awozwy r-18u37iz r-1h0z5md">-->
+<!--                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"-->
+<!--                             data-id="IcSystemGuestPassenger">-->
+<!--                            <g fill="none" fill-rule="evenodd">-->
+<!--                                <rect width="24" height="24"></rect>-->
+<!--                                <path stroke="#03121A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--                                      d="M2,21 L13,21 L13,19.5 C13,16.4624339 10.5375661,14 7.5,14 L7.5,14 C4.46243388,14 2,16.4624339 2,19.5 L2,21 Z M7,4 L8,4 C9.65685425,4 11,5.34314575 11,7 L11,8.5 C11,10.4329966 9.43299662,12 7.5,12 L7.5,12 C5.56700338,12 4,10.4329966 4,8.5 L4,7 C4,5.34314575 5.34314575,4 7,4 Z"></path>-->
+<!--                                <path stroke="#0194F3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--                                      d="M16,19 L22,19 L22,18 C22,14.4624339 19.5581561,12 17,12 C15.6264236,12 14.7600111,12.2294943 14,13 M16,2 L16.3162278,2.9486833 C16.7245699,4.17370972 17.8709864,5 19.1622777,5 L21,5"></path>-->
+<!--                                <path stroke="#0194F3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--                                      d="M16,2 L17,2 C18.6568542,2 20,3.34314575 20,5 L20,6.5 C20,8.43299662 18.4329966,10 16.5,10 L16.5,10 C14.5670034,10 13,8.43299662 13,6.5 L13,5 C13,3.34314575 14.3431458,2 16,2 Z"></path>-->
+<!--                            </g>-->
+<!--                        </svg>-->
+<!--                        <div class="css-1dbjc4n r-1pyaxff"></div>-->
+<!--                        <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-majxgm r-rjixqe r-fdjqy7">2-->
+<!--                            khách-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+            </div>
+            <div class="css-1dbjc4n r-1l31rp8 r-1phboty r-5kkj8d"></div>
+            <div class="css-1dbjc4n r-1yzf0co">
+                <div class="css-1dbjc4n r-eqz5dr" style="align-items: stretch; -webkit-box-align: stretch;">
+                    <div class="css-1dbjc4n">
+                        <div class="css-1dbjc4n r-1awozwy r-18u37iz r-1h0z5md">
+                            <img importance="low" loading="lazy"
+                                 src="https://ik.imagekit.io/tvlk/image/imageResource/2023/07/27/1690451958285-43836c7e0f5321b394371359084fbb6b.png?tr=h-24,q-75,w-24"
+                                 srcset="https://ik.imagekit.io/tvlk/image/imageResource/2023/07/27/1690451958285-43836c7e0f5321b394371359084fbb6b.png?tr=h-24,q-75,w-24 1x, https://ik.imagekit.io/tvlk/image/imageResource/2023/07/27/1690451958285-43836c7e0f5321b394371359084fbb6b.png?tr=dpr-2,h-24,q-75,w-24 2x, https://ik.imagekit.io/tvlk/image/imageResource/2023/07/27/1690451958285-43836c7e0f5321b394371359084fbb6b.png?tr=dpr-3,h-24,q-75,w-24 3x"
+                                 decoding="async" width="24" height="24"
+                                 style="object-fit: fill; object-position: 50% 50%;">
+                            <div class="css-1dbjc4n r-1pyaxff"></div>
+                            <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-majxgm r-rjixqe r-fdjqy7">
+                                Vòi tắm đứng
+                            </div>
+                        </div>
+                    </div>
+                    <div class="css-1dbjc4n" style="padding-bottom: 8px;"></div>
+                    <div class="css-1dbjc4n">
+                        <div class="css-1dbjc4n r-1awozwy r-18u37iz r-1h0z5md">
+                            <img importance="low" loading="lazy"
+                                 src="https://s3-ap-southeast-1.amazonaws.com/cntres-assets-ap-southeast-1-250226768838-cf675839782fd369/imageResource/2018/08/03/1533288223894-bfc04d321424d07300ef7b2cd3c6fb2a.png"
+                                 decoding="async" width="24" height="24"
+                                 style="object-fit: fill; object-position: 50% 50%;">
+                            <div class="css-1dbjc4n r-1pyaxff"></div>
+                            <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-majxgm r-rjixqe r-fdjqy7">Tủ
+                                lạnh
+                            </div>
+                        </div>
+                    </div>
+                    <div class="css-1dbjc4n" style="padding-bottom: 8px;"></div>
+                    <div class="css-1dbjc4n">
+                        <div class="css-1dbjc4n r-1awozwy r-18u37iz r-1h0z5md">
+                            <img importance="low" loading="lazy"
+                                 src="https://s3-ap-southeast-1.amazonaws.com/cntres-assets-ap-southeast-1-250226768838-cf675839782fd369/imageResource/2018/08/13/1534147303404-6f86a86f6f3621d3c9954aeb5b87aa7a.png"
+                                 decoding="async" width="24" height="24"
+                                 style="object-fit: fill; object-position: 50% 50%;">
+                            <div class="css-1dbjc4n r-1pyaxff"></div>
+                            <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-majxgm r-rjixqe r-fdjqy7">
+                                Máy lạnh
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="css-1dbjc4n r-1l31rp8 r-1phboty r-5kkj8d"></div>
+            <div class="css-1dbjc4n r-1l31rp8 r-1phboty r-5kkj8d"></div>
+        </div>
+    </div>
+</div>
+        <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-b88u0q r-rjixqe r-6gpygo r-fdjqy7 text-info"><h5>Thông tin
+            phòng thêm</h5>
+        </div>
+        <div class="css-1dbjc4n r-1yzf0co">
+            <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-b88u0q r-rjixqe r-6gpygo r-fdjqy7"><i class="bi bi-question-diamond-fill"></i>Tiện nghi
+                phòng tắm
+            </div>
+            <ul style="display: grid; grid-template-columns: repeat(2, minmax(122px, 1fr)); row-gap: 4px; padding-left: 16px; margin: 0px;">
+                <li style="padding-right: 24px;">
+                    <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-majxgm r-rjixqe r-fdjqy7">Vòi tắm
+                        đứng
+                    </div>
+                </li>
+                <li style="padding-right: 0px;">
+                    <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-majxgm r-rjixqe r-fdjqy7">Máy sấy
+                        tóc
+                    </div>
+                </li>
+                <li style="padding-right: 24px;">
+                    <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-majxgm r-rjixqe r-fdjqy7">Áo choàng
+                        tắm
+                    </div>
+                </li>
+            </ul>
+            <div class="css-1dbjc4n r-14gqq1x r-1udh08x" style="max-height: 0px;">
+                <div class="css-1dbjc4n">
+                    <ul style="display: grid; grid-template-columns: repeat(2, minmax(122px, 1fr)); row-gap: 4px; padding-left: 16px; margin: 0px;"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="css-1dbjc4n r-1l31rp8 r-1phboty r-5kkj8d"></div>
+        <div class="css-1dbjc4n r-1yzf0co">
+            <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-b88u0q r-rjixqe r-6gpygo r-fdjqy7"><i class="bi bi-question-diamond-fill"></i>Tiện nghi
+                phòng
+            </div>
+            <ul style="display: grid; grid-template-columns: repeat(2, minmax(122px, 1fr)); row-gap: 4px; padding-left: 16px; margin: 0px;">
+                <li style="padding-right: 24px;">
+                    <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-majxgm r-rjixqe r-fdjqy7">Máy lạnh
+                    </div>
+                </li>
+                <li style="padding-right: 0px;">
+                    <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-majxgm r-rjixqe r-fdjqy7">Nước đóng
+                        chai miễn phí
+                    </div>
+                </li>
+                <li style="padding-right: 24px;">
+                    <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-majxgm r-rjixqe r-fdjqy7">Quầy bar
+                        mini
+                    </div>
+                </li>
+                <li style="padding-right: 0px;">
+                    <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-majxgm r-rjixqe r-fdjqy7">Tủ lạnh
+                    </div>
+                </li>
+                <li style="padding-right: 24px;">
+                    <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-majxgm r-rjixqe r-fdjqy7">TV</div>
+                </li>
+                <li style="padding-right: 0px;">
+                    <div dir="auto" class="css-901oao r-cwxd7f r-t1w4ow r-1b43r93 r-majxgm r-rjixqe r-fdjqy7">Két an
+                        toàn tại phòng
+                    </div>
+                </li>
+            </ul>
+            <div class="css-1dbjc4n r-14gqq1x r-1udh08x" style="max-height: 0px;">
+                <div class="css-1dbjc4n">
+                    <ul style="display: grid; grid-template-columns: repeat(2, minmax(122px, 1fr)); row-gap: 4px; padding-left: 16px; margin: 0px;"></ul>
+                </div>
+            </div>
+        </div>
+        {% if current_user.is_authenticated %}
+        <div class="form-group mt-2">
+            <textarea class="form-control" rows="5" id="comment" name="text"
+                      placeholder="Nội dung bình luận"></textarea>
+            <input type="button" onclick="addComment({{product.maPhong}})" value="Bình luận" class="btn btn-success mt-1"/>
+        </div>
+        {% else %}
+        <p>Vui lòng <a href="/login?next=/products/{{product.maPhong}}">đăng nhập</a> để bình luận!</p>
+        {% endif %}
+
+        <div class="mt-2" id="comments">
+            {% for c in comments %}
+            <div class="row alert alert-info">
+                <div class="col-md-1">
+                    <img src="{{c.user.avatar}}" class="img-fluid rounded"/>
+                </div>
+                <div class="col-md-11">
+                    <p>{{ c.content }}</p>
+                    <p>Bình luân lúc: <span class="my-date">{{ c.created_date }}</span></p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js"></script>
+        <script>
+            window.onload = function() {
+                let dates = document.getElementsByClassName("my-date");
+                for (let d of dates)
+                    d.innerText = moment(d.innerText).locale("vi").fromNow();
+            }
+        </script>
+
+        {% endblock %}
